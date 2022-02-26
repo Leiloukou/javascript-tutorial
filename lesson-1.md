@@ -44,7 +44,7 @@ let myVariable = 1234;
 
 #### The console
 
-Now you will lear how to log
+Now you will learn how to log
 something to the console.
 
 First you will have to get a
