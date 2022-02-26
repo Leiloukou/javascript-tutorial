@@ -8,11 +8,8 @@ First, before you write any code,
 you make sure that you have
 checked off all of these steps:
 
-[ ] You must have IDE ( Integrated Development Environment ),
-which is also used as a text editor,
-I suggest using [VSCode](https://code.visualstudio.com/).
-[ ] Something that you must also have a modern browser,
-I suggest [Chrome](https://chrome.google.com).
+- You must have IDE ( Integrated Development Environment ), which is also used as a text editor, I suggest using [VSCode](https://code.visualstudio.com/).
+- Something that you must also have a modern browser, I suggest [Chrome](https://chrome.google.com).
 
 ### The mindset
 
@@ -29,16 +26,23 @@ lets get onto the actual code.
 
 ### The first code
 
+#### Variables
+
 Lets look at variables.
 This is going to be how
 you would create a variable.
 
-This declaration creates a new variable called myVariable,
-and is assigned with the value of the number 1234.
+This declaration creates
+a new variable called
+myVariable,
+and is assigned with the
+value of the number 1234.
 
 ```javascript
 let myVariable = 1234;
 ```
+
+#### The console
 
 Now you will lear how to log
 something to the console.
@@ -69,31 +73,86 @@ But only with the let keyword.
 
 ```javascript
 let helloWorld = 'Hello, world!';
-console.log(helloWorld);V
+console.log(helloWorld);
+
 helloWorld = 'Leiloukou is best!';
 console.log(helloWorld);
 ```
 
 The first console.log(),
-should
+should log:
+
+```javascript
+'Hello, world!';
+```
+
+And then the second one
+should log:
+
+```javascript
+'Leiloukou is best!';
+```
+
+#### Back to variables
+
 Next, you will create a constant variable,
 AKA, a variable that cannot change.
 
 ```javascript
-// This declaration creates a new variable called myVariable,
-// as a new String datatype, with the value of Lil' Wuth Who Goeth Leil.
-// Also, notice the backslash character, used to escape normal single-quote syntax,
-// which allows us to create an apostrophe.
-// Also note the use of the const keyword, which creates a constant variable,
-// of which you cannot redefine, now, this may seem like a bad idea, I mean,
-// not being able to change a variable, defeats the whole purpose of variables in general,
-// so what is the point?
-// Sometimes you might want to create a variable that doesn't change.
-// Also, in ES6, also know as Ecma Script 2015,
-// and Node.js, which is a backend Javascript language, you can import modules,
-// if you would like to learn how to import modules, you can skip a few hundred lessons.
-const myVariable = new String('Lil\' Wuth Who Goeth Leil');
+const myVariable = 'This variable cannot change...';
+```
 
-// This logs the variable to the console
-window.console.log(window.myVariable);
+To prove a point,
+this is what the
+console would output,
+if you tried to change
+a constant variable.
+
+The code:
+
+```javascript
+const myVariable = 'This variable cannot change...';
+console.log(myVariable);
+
+myVariable = 'This is not supposed to change';
+console.log(myVariable);
+```
+
+The console output:
+
+```error
+VM38:4 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:4:12
+```
+
+Here is a tip,
+always read the
+error message,
+don't just try
+to find it yourself.
+
+#### Comments
+
+Comments are line of
+text that do not get run.
+A single-line comment
+is written like this:
+
+```javascript
+// This is just a code comment.
+```
+
+Comments are used to describe code,
+I sometimes forget why I chose to
+write my code in a specific way,
+I just read what my comment says.
+
+Here is an example:
+
+```javascript
+// This logs "Hello, world!" to the console.
+console.log('Hello, world');
+
+// This creates a variable.
+let leil = 'Cool-var';
 ```
